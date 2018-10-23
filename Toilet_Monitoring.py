@@ -1,7 +1,6 @@
 import cv2
 import time
 import json
-import time
 import base64
 import requests
 import datetime
