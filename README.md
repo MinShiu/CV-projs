@@ -1,17 +1,17 @@
 # CV-projs
 
-## Requirements:
+## Requirements
 
 <ul>
   <li>OpenCV >= 3.2.0</li>
   <li>NumPy</li>
 </ul>
 
-## Description:
+## Description
 
 <p>Various computer vision projects. These scripts only focus on people counting and carpark driveway congestion detection. Purely based on OpenCV, no gpu is required for running them. However, these scripts are designed to fit my own camera, so most of the parameter need to be adjusted accordingly for your own use case.</p>
 
-<p>Techniques used in these projects:</p>
+<i>Techniques used in these projects:</i>
 
 <ol>
   <li>Background Subtraction</li>
