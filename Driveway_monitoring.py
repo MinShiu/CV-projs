@@ -82,7 +82,7 @@ while(True):
             firstSend = False
             
     ## jam resolved, roll back state of variables and save to log file
-    elif (round(time.time() - t, 1) < timeThreshold) and countBool:
+    elif (round(time.time() - t, 1) < TIMETHRESH) and countBool:
         countBool = False
         string = ctime + ',' + str(maxC) + ',' + str(low) + '\n'
         low = 5000

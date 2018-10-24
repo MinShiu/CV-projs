@@ -1,6 +1,5 @@
 import cv2
 import time
-import json
 import base64
 import requests
 import datetime
@@ -77,7 +76,7 @@ def detected(frame, frame_cpy, cnt, x, y, w, h, cx, cy, sex, currentSendCount):
     ## save cropped image to local storage
     rsz = frame_cpy[y1:y2, x1:x2]
     timenow = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S.%f')
-    #cv2.imwrite('C:\\Users\\admin\\Desktop\\Image_Toilet_Basement\\' + timenow + '.jpg', rsz)
+    cv2.imwrite('C:\\Users\\admin\\Desktop\\Image_Toilet_Basement\\' + timenow + '.jpg', rsz)
     
     ## visualization
     cv2.circle(frame, (cx, cy), 5, (0,0,255), -1)
