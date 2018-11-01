@@ -138,14 +138,14 @@ timer = time.time()    # timer to control if the toilet is idle for too long
 writeOnce = False
 currentSendCountM = 0    # variable to track count number for pushing notification
 currentSendCountF = 0
-start = time.time()
+showCountTimerReset = time.time()
 exceedCountMale = False
 exceedCountFemale = False
 elapsed = 0
 
 ## load log file upon restart and restore counts
 with open(r'C:\Users\admin\Desktop\log_toilet2.txt', 'r') as f:
-    counta, countb, countaL, countbL = [int(x.split(':')[-1]) for x in f.readlines()[-1].split(']')[1].replace('\n', '').split(' ')[1:]]
+    countM, countF, countML, countFL = [int(x.split(':')[-1]) for x in f.readlines()[-1].split(']')[1].replace('\n', '').split(' ')[1:]]
 
 while(cap.isOpened()):
 
