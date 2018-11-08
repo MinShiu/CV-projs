@@ -86,9 +86,9 @@ def detected(frame, frame_cpy, cnt, x, y, w, h, cx, cy, sex, currentSendCount):
     if currentSendCount >= 200:
         sex = 'female' if sex == 'F' else 'male'
         str_triggered = str(currentSendCount) + " users at b1 " + sex + " toilet since last seen, attention required."
-        doPosReq("Lendlease", "JEM | Washroom Monitoring", str_triggered, "photo", "System Administrator",
-                 datetime.datetime.now().strftime('%H:%M'), datetime.datetime.now().strftime('%Y-%m-%d'),
-                 'data:image/jpg;base64,' + jpg_as_text.decode())
+        #doPosReq("Lendlease", "JEM | Washroom Monitoring", str_triggered, "photo", "System Administrator",
+        #         datetime.datetime.now().strftime('%H:%M'), datetime.datetime.now().strftime('%Y-%m-%d'),
+        #         'data:image/jpg;base64,' + jpg_as_text.decode())
 
 def doPosReq(organization, group, title, taskType, user, duetime, duedate, photo):
     """perform post requests to app api"""
@@ -258,7 +258,7 @@ while(cap.isOpened()):
         str_M = 'COUNT M : '+ str(countM)
         str_F = 'COUNT F : ' + str(countF)
         strML = 'IN_M : ' + str(countML)
-        strFL = 'IN_B : ' + str(countFL)
+        strFL = 'IN_F : ' + str(countFL)
         #cv2.putText(frame, str_M ,(40,140), FONT, 0.5, (0,0,255), 1, cv2.LINE_AA)
         #cv2.putText(frame, str_F ,(40,170), FONT, 0.5, (0,0,255), 1, cv2.LINE_AA)
         cv2.putText(frame, strML ,(40,140), FONT, 0.5, (0,0,255), 1, cv2.LINE_AA)
