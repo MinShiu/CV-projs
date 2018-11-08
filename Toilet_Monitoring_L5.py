@@ -270,7 +270,7 @@ while(cap.isOpened()):
         cv2.imshow('Frame', frame)
 
     if exceedCountMale and exceedCountFemale:
-    	start = time.time()
+    	showCountTimerReset = time.time()
     	exceedCountMale = False
     	exceedCountFemale = False
 
@@ -308,8 +308,8 @@ while(cap.isOpened()):
 
     ## reset total visitor count at midnight
     if datetime.datetime.now().time().hour == 0 and datetime.datetime.now().time().minute == 0 and datetime.datetime.now().time().second == 5:
-        countaL = 0
-        countbL = 0
+        countML = 0
+        countFL = 0
 
     k = cv2.waitKey(30)
     if k == 27:
