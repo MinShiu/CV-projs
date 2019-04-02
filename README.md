@@ -21,4 +21,5 @@
   <li>Various basic OpenCV core function</li>
 </ol>
 
-https://drive.google.com/open?id=1AMr2U5h3YbSzqRiGWFqXI8uOYE4YsIdS
+https://drive.google.com/open?id=1UxOUeOIIM9hi9pg4tbU4Lw9AbGuajM9O
+https://drive.google.com/open?id=1y1Hi68S9cZ8GSL_rhYB6Y2IQjutq_rXf
